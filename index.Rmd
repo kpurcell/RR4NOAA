@@ -11,7 +11,7 @@ mode        : selfcontained      # {standalone, draft}
 license     : by-nc-sa
 github      : 
  user       :kpurcell
- repo       :Git4NOAA
+ repo       :RR4NOAA
 
 ---
 
@@ -67,7 +67,7 @@ $(function() {
 
 
 *** =right
-![RR](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\RR.jpg)
+![RR](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\RR.jpg)
 
 --- .segue .nobackground .dark
 
@@ -123,7 +123,7 @@ $(function() {
 
 *** =right
 
-![files](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\numFiles.jpg)
+![files](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\numFiles.jpg)
 
 --- &twocol
 
@@ -142,7 +142,7 @@ $(function() {
 
 *** =right
 
-![gitFolder](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\gitFolder.png)
+![gitFolder](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\gitFolder.png)
 
 --- &twocol
 ## Why git?
@@ -164,7 +164,7 @@ $(function() {
 
 ## git Branches & Merging
 
-![gitWrkFlow](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\gitBranch.png)
+![gitWrkFlow](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\gitBranch.png)
 
 ---
 
@@ -182,22 +182,22 @@ $(function() {
 
 ## What does this look like?
 
-![gitGUI](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\screenshot.5.png)
+![gitGUI](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\screenshot.5.png)
 
 ---
 
 ## When to commit?
-![gitGUI2](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\screenshot.1.png)
+![gitGUI2](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\screenshot.1.png)
 
 ---
 
 ## Detailed files changes
-![gitGUI2](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\screenshot.4.png)
+![gitGUI2](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\screenshot.4.png)
 
 ---
 
 ## Each commit has all the details
-![gitGUI2](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\screenshot.3.png)
+![gitGUI2](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\screenshot.3.png)
 
 
 --- &twocol
@@ -219,7 +219,7 @@ $(function() {
 
 ## GitHub 
 
-![kpGitHub](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\kpurcellGitHub.png)
+![kpGitHub](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\kpurcellGitHub.png)
 
 --
 
@@ -228,7 +228,7 @@ $(function() {
 ### 1. Collaboration is fueled by **Branches**
 ### 2. Branches can be for different authors or different methods
 
-![gitBranch](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\gitBranch.png)
+![gitBranch](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\gitBranch.png)
 
 --- .segue .nobackground .dark
 
@@ -243,7 +243,7 @@ $(function() {
 ### 1. Clone the previous repro 
 ### 2. START!
 
-![gitWrkFlow](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\git-workflow.png)
+![gitWrkFlow](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\git-workflow.png)
 
 --- .segue .nobackground .dark
 
@@ -270,7 +270,7 @@ Documents with code & text in one, in which tables, values, plots are dynamicall
 
 ## Sweave
 
-![sweaveImg](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\sweaveDiagram.png)
+![sweaveImg](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\sweaveDiagram.png)
 
 ---
 
@@ -317,7 +317,7 @@ petals represent positions with higher sampling.  The sampling intenstiy uniform
 
 *** =right
 
-![sweaveImg](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\mdSyntax.png)
+![sweaveImg](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\mdSyntax.png)
 
 --- &twocol
 
@@ -334,7 +334,7 @@ petals represent positions with higher sampling.  The sampling intenstiy uniform
 
 *** =right
 
-![knitrBook](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\knitrBook.jpg)
+![knitrBook](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\knitrBook.jpg)
 
 ---
 
@@ -342,7 +342,7 @@ petals represent positions with higher sampling.  The sampling intenstiy uniform
 
 **It takes this code:**  
 
-![knitrE](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\knitrEx.png)
+![knitrE](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\knitrEx.png)
 
 And creates the previous slide:
 
@@ -360,12 +360,12 @@ And creates the previous slide:
 
 *** =right
 
-![knitrBook](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\knitrBook.jpg)
+![knitrBook](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\knitrBook.jpg)
 
 --- .segue .dark
 
 ## For the MS Word hold outs!
-![antiMS](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\antiMS.jpg)
+![antiMS](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\antiMS.jpg)
 
 --- &twocol
 ## Pandoc conversion utility
@@ -381,7 +381,7 @@ And creates the previous slide:
 
 *** =right
 
-![pandocCon](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\pandoc.jpg)
+![pandocCon](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\pandoc.jpg)
 
 Inputs  | Outputs
 ------------- | -------------
@@ -403,7 +403,7 @@ MediaWiki     | HTML 5
 
 ## This is the method you are looking for!
 
-![obiOcto](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\Git4NOAA\\images\\octobiwan2.jpg)
+![obiOcto](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\octobiwan2.jpg)
 
 
 
