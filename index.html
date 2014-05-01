@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Software for Reproducible Research</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Software for Reproducible Research">
+  <meta name="author" content="K.M. Purcell">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/solarized_light.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/noaa.jpg">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Software for Reproducible Research</h1>
+    <h2>applications for fishery stock assessment</h2>
+    <p>K.M. Purcell<br/>Postdoctoral Associate</p>
+  </hgroup>
+    <a href="https://github.com///zipball/gh-pages" class="example">
+     Download
+    </a>
+  <article></article>  
+  <footer class = 'license'>
+    <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+    </a>
+  </footer>
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <!-- Limit image width and height -->
+
+<style type='text/css'>
+img {
+    max-height: 560px;
+    max-width: 964px;
+}
+</style>
+
+<!-- Center image on slide -->
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+
+<script type='text/javascript'>
+$(function() {
+    $("p:has(img)").addClass('centered');
+});
+</script>
+
+<h2>Reproducible Research</h2>
+
+<ol>
+<li><p><strong>Justifications:</strong></p>
+
+<ul>
+<li>creates an <em>open</em> standard</li>
+<li>prevents <em>re-creation</em> -- facilitates <em>advancement</em> </li>
+<li>fosters <em>collaboration</em></li>
+<li>Required by a growning number of publications</li>
+</ul></li>
+<li><p><strong>Fisheries is especially fitted for RR approaches because our work is</strong>:</p>
+
+<ul>
+<li>inherently open in that it is for the public good </li>
+<li>open to criticism &amp; evaluation</li>
+</ul></li>
+<li><p><strong>Stock assessment is also</strong>:</p>
+
+<ul>
+<li>Repetitive -- meaning that reproducibility is not only a necessity but also expedient.</li>
+<li>Collaborative -- meaning a number of partners contribute to any stock assessment</li>
+</ul></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>The Quant&#39;s Quandry</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="http://www.globalnerdy.com/wordpress/wp-content/uploads/2012/04/geeks-and-repetitive-tasks.jpg" alt="geekChoice"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Tools for Reproducible Research</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ol>
+<li>Version control</li>
+<li>Dynamic documents
+
+<ul>
+<li>Markdown</li>
+<li>knitR</li>
+<li>pandoc</li>
+</ul></li>
+</ol>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5CRR.jpg" alt="RR"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue nobackground dark" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Version Control Systems</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Version control System (VCS)</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ol>
+<li>Origins in software development</li>
+<li>Manage changes/edits to:
+
+<ul>
+<li>documents</li>
+<li>web sites</li>
+<li>computer programs</li>
+</ul></li>
+<li>Advanced file versioning, and infinite undo</li>
+<li>Does not interfere with current methods (backups etc.)</li>
+<li>Lots of options (Subversion, Mercurial, Git)</li>
+</ol>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="http://www.phdcomics.com/comics/archive/phd101212s.gif" alt="vcs"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Version control System (VCS)</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>with &quot;track changes&quot; <code>accepted==gone</code></li>
+<li>Data changes (Who? Why? When?)</li>
+<li>VCS maintains a full provenance:
+
+<ul>
+<li>date &amp; time of change </li>
+<li>authorof changes </li>
+<li>details on exact changes</li>
+<li>+ SSH hashes </li>
+</ul></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="http://www.phdcomics.com/comics/archive/phd101212s.gif" alt="vcs2"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Traditional Directory Organization</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Lots of copies</li>
+<li>Good organization requires complex naming scheme (means nothing to others)</li>
+<li>Computer file dating unreliable (&quot;modified date&quot;) </li>
+<li>No information on differences b/w files (possibly in a separate notebook)</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5CnumFiles.jpg" alt="files"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Version control managed folder</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ol>
+<li>Uses traditional directories</li>
+<li>Has all your files</li>
+<li>And every version you have saved !
+
+<ul>
+<li>this directory has 92 versions of directory</li>
+</ul></li>
+<li>Process is controled by the program</li>
+<li>Details are saved in a hidden file in the directory</li>
+</ol>
+
+<p><strong>Does not interfere with traditional backup/archiving methods</strong></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5CgitFolder.png" alt="gitFolder"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Why git?</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Industry standard SCM/VCS
+
+<ul>
+<li>most common in science</li>
+</ul></li>
+<li>Branching &amp; Merging</li>
+<li>Small &amp; Fast</li>
+<li>Distributed</li>
+<li>Versions assurance (checksums)</li>
+<li>Data staging</li>
+<li>Free and Open source</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="http://2.bp.blogspot.com/-ip6Kiruk784/UypeS9wRz1I/AAAAAAAADA4/2oXVZcqpHnI/s1600/git-logo.png" alt="gitIcon"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>git Branches &amp; Merging</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5CgitBranch.png" alt="gitWrkFlow"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Distributed vs Centralized</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Centralized</h3>
+
+<p><img src="http://git-scm.com/images/about/workflow-a@2x.png" alt="gitCent"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Distributed vs Centralized</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Distributed</h3>
+
+<p><img src="http://git-scm.com/images/about/workflow-b@2x.png" alt="gitDist"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>What does this look like?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5Cscreenshot.5.png" alt="gitGUI"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>When to commit?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5Cscreenshot.1.png" alt="gitGUI2"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Detailed files changes</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5Cscreenshot.4.png" alt="gitGUI2"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Each commit has all the details</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5Cscreenshot.3.png" alt="gitGUI2"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>GitHub</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li><strong>Git</strong> can also operate collaboratively</li>
+<li>Collaboration require an <strong>shared</strong> server</li>
+<li>The most popular platform is <strong>GitHub</strong></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="http://i1-news.softpedia-static.com/images/news2/Twitter-s-Original-Logo-Designer-Only-Made-3-from-It-2.jpg" alt="gitHubIcon"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>GitHub</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5CkpurcellGitHub.png" alt="kpGitHub"></p>
+
+<h2></h2>
+
+<h2>Collaboration in Git</h2>
+
+<h3>1. Collaboration is fueled by <strong>Branches</strong></h3>
+
+<h3>2. Branches can be for different authors or different methods</h3>
+
+<p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5CgitBranch.png" alt="gitBranch"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue nobackground dark" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>How about a new Assessment</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="http://www.phdcomics.com/comics/archive/phd031214s.gif" alt="codeReuse"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Starting a new assessment,</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>1. Clone the previous repro</h3>
+
+<h3>2. START!</h3>
+
+<p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5Cgit-workflow.png" alt="gitWrkFlow"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue nobackground dark" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Dynamic Documents</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Dynamic Documents</h2>
+  </hgroup>
+  <article data-timings="">
+    <blockquote>
+<p>&quot;Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to humans what we want the computer to do.&quot;</p>
+
+<p>-- Donald E. Knuth, Literate Programming, 1984</p>
+</blockquote>
+
+<p>Documents with code &amp; text in one, in which tables, values, plots are dynamically created as changes to underlying structure and data occur.</p>
+
+<h2>Why?</h2>
+
+<ol>
+<li>Increased repeatability</li>
+<li>Reduced creation time </li>
+<li>Reduced transposition errors </li>
+<li>Reduced re-creation time (no repetition when data changes)</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Sweave</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5CsweaveDiagram.png" alt="sweaveImg"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>Sweave</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>\section{Exploratory Data Analysis}
+
+\begin{figure}
+\begin{center}
+
+&lt;&lt;fig=TRUE,echo=FALSE&gt;&gt;=
+sunflowerplot(br.gss.dat$lon, br.gss.dat$lat, main=&quot;Sampling Intensity&quot;, xlab=&quot;Lon&quot;,
+              ylab=&quot;Lat&quot;)
+map(&quot;state&quot;,fill=T,col=&quot;gray&quot;,add=T)
+@
+
+\caption{This is a Sunflower plot showing spatial distribution of sampling intensity}
+\label{fig:sunflower}
+\end{center}
+\end{figure}
+
+The spatial distribution for sampling intensity for entire Gulf Shrimp statistics dataset can be seen in the sunflower plot \ref{fig:sunflower}.  Each line is a samples and therefore more developed
+petals represent positions with higher sampling.  The sampling intenstiy uniform and plenty dense. 
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>Rmarkdown Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="http://www.rstudio.com/images/docs/markdownChunk.png" alt="dynDocEx"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Markdown</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Created by John Gruber<br></li>
+<li>Simplicity over LaTeX<br></li>
+<li>Basic keyboard commands for formatting</li>
+<li>Faster, due to limited mouse use</li>
+<li>Flexible -- Allows use of LaTeX code</li>
+<li>Easily managed with VCS</li>
+<li>Standardized format for conversion</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5CmdSyntax.png" alt="sweaveImg"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>Knitr</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li><code>knitR()</code> is a R package for dynamic report generation<br></li>
+<li>created by Yihui Xie (Iowa State, RStudio)</li>
+<li>works with other languages (<em>Awk</em>, <em>Lisp</em>, etc.)</li>
+<li>highly customizable (show code, hide code, etc)
+<img src="http://www.rstudio.com/images/docs/markdownChunkOptions.png" alt="knitrCustom"></li>
+<li>Generates PDF (via LaTex), HTML</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5CknitrBook.jpg" alt="knitrBook"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  <hgroup>
+    <h2>How does it work?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><strong>It takes this code:</strong>  </p>
+
+<p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5CknitrEx.png" alt="knitrE"></p>
+
+<p>And creates the previous slide:</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-29" style="background:;">
+  <hgroup>
+    <h2>Knitr</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>created by Yihui Xie (Iowa State, RStudio)</li>
+<li><code>knitR()</code> is a R package for dynamic report generation<br></li>
+<li>works with other languages (<em>Awk</em>, <em>Lisp</em>, etc.)</li>
+<li>highly customizable (show code, hide code, etc)</li>
+<li>Generates <strong>PDF</strong> (via LaTex), <strong>HTML</strong></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5CknitrBook.jpg" alt="knitrBook"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark" id="slide-30" style="background:;">
+  <hgroup>
+    <h2>For the MS Word hold outs!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5CantiMS.jpg" alt="antiMS"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-31" style="background:;">
+  <hgroup>
+    <h2>Pandoc conversion utility</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Swiss Army Knife</li>
+<li>Converts between  <strong>43</strong> formats</li>
+<li>Renders Lit. Cited (No need for EndNote)</li>
+<li>can run from within R</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5Cpandoc.jpg" alt="pandocCon"></p>
+
+<table><thead>
+<tr>
+<th>Inputs</th>
+<th>Outputs</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Markdown</td>
+<td><strong>Word .docx</strong></td>
+</tr>
+<tr>
+<td>HTML</td>
+<td>LaTex</td>
+</tr>
+<tr>
+<td>DocBook</td>
+<td>LaTex Beamer</td>
+</tr>
+<tr>
+<td>LaTex</td>
+<td><strong>PDF</strong></td>
+</tr>
+<tr>
+<td>MediaWiki</td>
+<td>HTML 5</td>
+</tr>
+</tbody></table>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-32" style="background:;">
+  <hgroup>
+    <h2>Sources for more information</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><a href="http://software-carpentry.org/v4/index.html">Software Carpentry</a><br></li>
+<li><a href="https://support.rstudio.com/hc/en-us/articles/200552086-Using-R-Markdown">RStudio</a></li>
+<li><a href="https://try.github.io/levels/1/challenges/1">Try Git (quick 15 minute tutorial)</a></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  <hgroup>
+    <h2>This is the method you are looking for!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="C:%5CUsers%5CKevin.Purcell%5CDocuments%5CGitHub%5CGit4NOAA%5Cimages%5Coctobiwan2.jpg" alt="obiOcto"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The Quant&#39;s Quandry'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Tools for Reproducible Research'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Version Control Systems'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Version control System (VCS)'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Version control System (VCS)'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Traditional Directory Organization'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Version control managed folder'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Why git?'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='git Branches &amp; Merging'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Distributed vs Centralized'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Distributed vs Centralized'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='What does this look like?'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='When to commit?'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Detailed files changes'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Each commit has all the details'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='GitHub'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='GitHub'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='How about a new Assessment'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Starting a new assessment,'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Dynamic Documents'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Dynamic Documents'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Sweave'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Sweave'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Rmarkdown Example'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Markdown'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Knitr'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='How does it work?'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Knitr'>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='For the MS Word hold outs!'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Pandoc conversion utility'>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Sources for more information'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='This is the method you are looking for!'>
+         33
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
