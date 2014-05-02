@@ -8,7 +8,7 @@ framework   : io2012        # {io2012, html5slides, shower, dzslides, deckjs...}
 hitheme     : solarized_light  # {tomorrow, solarized_light, web2.0}
 widgets     : [mathjax, quiz, bootstrap]    # {mathjax, quiz, bootstrap}
 mode        : selfcontained      # {standalone, draft}
-license     : by-nc-sa
+license     : by
 github      : 
  user       :kpurcell
  repo       :RR4NOAA
@@ -104,7 +104,7 @@ $(function() {
   * date & time of change 
   * authorof changes 
   * details on exact changes
-  * + SSH hashes 
+  * SSH hashes 
  
 *** =right
 
@@ -162,7 +162,7 @@ $(function() {
 
 ---
 
-## git Branches & Merging
+## git -- Branches & Merging
 
 ![gitWrkFlow](C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\RR4NOAA\\images\\gitBranch.png)
 
@@ -398,6 +398,8 @@ MediaWiki     | HTML 5
 1. [Software Carpentry](http://software-carpentry.org/v4/index.html)  
 2. [RStudio](https://support.rstudio.com/hc/en-us/articles/200552086-Using-R-Markdown)
 3. [Try Git (quick 15 minute tutorial)](https://try.github.io/levels/1/challenges/1)
+4. [GitHub Guides](https://guides.github.com/)
+
 
 ---
 
