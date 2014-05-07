@@ -399,7 +399,7 @@ MediaWiki     | HTML 5
 2. [RStudio](https://support.rstudio.com/hc/en-us/articles/200552086-Using-R-Markdown)
 3. [Try Git (quick 15 minute tutorial)](https://try.github.io/levels/1/challenges/1)
 4. [GitHub Guides](https://guides.github.com/)
-
+5. [GitHub CheatSheet](https://github.com/tiimgreen/github-cheat-sheet)
 
 ---
 
